@@ -1,0 +1,21 @@
+<!-- Wrapper-->
+<div id="app_wrapper">
+
+	<div ng-include="'views/common/topnavbar.html'"></div>
+	
+    <!-- Navigation -->
+    <div ng-include="'views/common/navigation.html'"></div>
+	
+	<section id="content_outer_wrapper">
+		<div id="content_wrapper">
+			<div ui-view></div>
+		</div>
+		
+		<!-- Footer -->
+		<div ng-include="'views/common/footer.html'"></div>
+	</section>
+	
+	<div ng-include="'views/common/rightbar.html'"></div>
+
+</div>
+<!-- End wrapper-->

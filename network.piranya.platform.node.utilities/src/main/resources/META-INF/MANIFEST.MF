@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: network.piranya.platform.node.utilities
+Bundle-Version: 0.7.0
+Bundle-Name: Piranya: Platform: Utilities
+Export-Package: network.piranya.platform.node.utilities;
+ network.piranya.platform.node.utilities.impl;
+ version=1.0.0
+Import-Package: org.jutils.jhardware,
+ io.protostuff,
+ io.protostuff.runtime,
+ org.slf4j
+Require-Bundle: network.piranya.platform.api

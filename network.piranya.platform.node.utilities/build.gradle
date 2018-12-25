@@ -1,0 +1,22 @@
+
+dependencies {
+	compile project(':network.piranya.platform.api')
+	
+	compile "network.piranya.infrastructure:network.piranya.infrastructure.dcm4j:$dcm4jVersion"
+	
+	compile "org.abstractj.kalium:kalium:0.7.0"
+	compile "org.bouncycastle:bcprov-jdk15on:1.59"
+	compile "org.jhardware:jHardware:0.8.5"
+	compile "com.fasterxml.jackson.core:jackson-core:2.9.3"
+	compile "com.fasterxml.jackson.core:jackson-databind:2.9.3"
+	compile "com.fasterxml.jackson.core:jackson-annotations:2.9.3"
+	compile "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.3"
+	
+	compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+jar {
+    manifest {
+        from('src/main/resources/META-INF/MANIFEST.MF')
+    }
+}

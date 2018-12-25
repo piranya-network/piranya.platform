@@ -1,0 +1,19 @@
+
+dependencies {
+	compile project(':network.piranya.platform.api')
+	compile project(':network.piranya.platform.node.api')
+	compile project(':network.piranya.platform.node.core.execution')
+	compile project(':network.piranya.platform.node.utilities')
+	
+	compile "network.piranya.infrastructure:network.piranya.infrastructure.dcm4j:$dcm4jVersion"
+	compile "network.piranya.infrastructure:network.piranya.infrastructure.pressing_udp:1.0.0"
+	
+	compile "net.openhft:chronicle-queue:5.16.13"
+	compile "org.lmdbjava:lmdbjava:0.6.1"
+}
+
+jar {
+    manifest {
+        from('src/main/resources/META-INF/MANIFEST.MF')
+    }
+}

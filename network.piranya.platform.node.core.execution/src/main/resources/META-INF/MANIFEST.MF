@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: network.piranya.platform.node.core.execution
+Bundle-Version: 0.7.0
+Bundle-Name: Piranya: Platform: Node: Execution
+Export-Package: network.piranya.platform.node.core.execution;
+ network.piranya.platform.node.core.execution.accessor;
+ network.piranya.platform.node.core.execution.bots;
+ network.piranya.platform.node.core.execution.engine;
+ network.piranya.platform.node.core.execution.engine.activity_log;
+ network.piranya.platform.node.core.execution.engine.bots;
+ network.piranya.platform.node.core.execution.engine.sandbox;
+ network.piranya.platform.node.core.execution.liquidity;
+ version=0.7.0
+Import-Package: org.osgi.framework,
+ org.slf4j
+Require-Bundle: network.piranya.platform.api,
+ network.piranya.platform.node.api,
+ network.piranya.platform.node.utilities,
+ network.piranya.infrastructure.dcm4j

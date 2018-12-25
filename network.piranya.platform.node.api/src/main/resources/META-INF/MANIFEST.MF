@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: network.piranya.platform.node.api
+Bundle-Version: 0.7.0
+Bundle-Name: Piranya: Platform: Node: API
+Export-Package: network.piranya.platform.node.accounts;
+ network.piranya.platform.node.accounts.activity;
+ network.piranya.platform.node.accounts.security;
+ network.piranya.platform.node.api.app.services;
+ network.piranya.platform.node.api.app.ui;
+ network.piranya.platform.node.api.booting;
+ network.piranya.platform.node.api.execution;
+ network.piranya.platform.node.api.execution.bots;
+ network.piranya.platform.node.api.execution.liquidity;
+ network.piranya.platform.node.api.execution.commands;
+ network.piranya.platform.node.api.local_infrastructure;
+ network.piranya.platform.node.api.local_infrastructure.concurrency;
+ network.piranya.platform.node.api.local_infrastructure.storage;
+ network.piranya.platform.node.api.local_infrastructure.storage.specific;
+ network.piranya.platform.node.api.modules;
+ network.piranya.platform.node.api.modules.spi;
+ network.piranya.platform.node.api.networking.nodes;
+ version=0.7.0
+Require-Bundle: network.piranya.platform.api,
+ network.piranya.platform.node.utilities

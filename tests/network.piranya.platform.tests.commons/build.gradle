@@ -1,0 +1,9 @@
+
+dependencies {
+	compile project(':network.piranya.platform.api')
+	compile project(':network.piranya.platform.node.api')
+	compile project(':network.piranya.platform.node.core')
+	compile project(':network.piranya.platform.node.core.execution')
+	compile project(':network.piranya.platform.node.utilities')
+	compile project(':network.piranya.platform.node.app')
+}

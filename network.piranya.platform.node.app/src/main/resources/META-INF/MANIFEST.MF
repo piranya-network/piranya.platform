@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: network.piranya.platform.node.app
+Bundle-Version: 0.7.0
+Bundle-Name: Piranya: Platform: Node: App
+Bundle-Activator: network.piranya.platform.node.app.osgi.Activator
+Import-Package: org.osgi.framework,
+ org.slf4j,
+ io.vertx.core,
+ io.vertx.core.http,
+ io.vertx.core.json,
+ io.vertx.ext.web,
+ io.vertx.ext.web.handler
+Require-Bundle: network.piranya.platform.api,
+ network.piranya.platform.node.api,
+ network.piranya.platform.node.core,
+ network.piranya.platform.node.core.execution,
+ network.piranya.platform.node.utilities,
+ network.piranya.infrastructure.dcm4j

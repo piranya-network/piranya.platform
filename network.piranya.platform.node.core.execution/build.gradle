@@ -1,0 +1,17 @@
+
+dependencies {
+	compile project(':network.piranya.platform.api')
+	compile project(':network.piranya.platform.node.api')
+	compile project(':network.piranya.platform.node.utilities')
+	
+	compile "network.piranya.infrastructure:network.piranya.infrastructure.dcm4j:$dcm4jVersion"
+	
+	compile "io.vertx:vertx-core:$vertxVersion"
+	compile "io.vertx:vertx-web:$vertxVersion"
+}
+
+jar {
+    manifest {
+        from('src/main/resources/META-INF/MANIFEST.MF')
+    }
+}

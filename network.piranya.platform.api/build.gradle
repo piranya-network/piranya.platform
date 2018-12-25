@@ -1,0 +1,9 @@
+
+dependencies {
+}
+
+jar {
+    manifest {
+        from('src/main/resources/META-INF/MANIFEST.MF')
+    }
+}

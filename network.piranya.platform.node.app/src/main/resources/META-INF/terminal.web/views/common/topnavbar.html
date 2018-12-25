@@ -1,0 +1,92 @@
+<header id="app_topnavbar-wrapper">
+	<!--<nav role="navigation" class="navbar topnavbar" style="background: url('assets/images/spray3-.jpg')">-->
+	<nav role="navigation" class="navbar topnavbar" style="background: linear-gradient(45deg, #0b1229, #762e4a)">
+		<div class="nav-wrapper">
+			<div id="logo_wrapper" class="nav navbar-nav">
+				<!--
+				<ul>
+					<li class="logo-icon">
+						<a href="index.html">
+							<div class="logo">
+								<img src="assets/img/logo/logo-icon.png" alt="Logo">
+							</div>
+							<h1 class="brand-text">MaterialLab</h1>
+						</a>
+					</li>
+				</ul>
+				-->
+				<ul>
+					<li class="logo-icon">
+						<a target="_blank" href="http://www.piranya.network">
+							<div class="logo">
+								<img src="assets/images/logo.png" alt="Logo">
+							</div>
+							<h1 class="brand-text"><strong>PIRANYA</strong></h1>
+						</a>
+					</li>
+				</ul>
+			</div>
+            <!--
+			<ul class="nav navbar-nav left-menu ">
+				<li class="menu-icon">
+					<a href="javascript:void(0)" role="button" data-toggle-state="app_sidebar-menu-collapsed" data-key="leftSideBar">
+						<i class="mdi mdi-backburger"></i>
+					</a>
+				</li>
+			</ul>
+            -->
+			<ul class="nav navbar-nav left-menu">
+                <li class="dropdown dropdown-lg app_menu_launcher" data-toggle="tooltip" data-placement="right" title="Workspaces">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                        <i class="zmdi zmdi-apps"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-lg-menu dropdown-menu-left btn-primary p-15 text-center">
+                        <li ng-repeat="workspaces in workspacesByCategory">
+                            <ul>
+                                <li ng-repeat="w in workspaces">
+                                    <a href="javascript:void(0)"><i class="fas {{w.icon}} fa-2x fa_workspaces"></i><span>{{w.title}}</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+			</ul>
+			<ul class="nav navbar-nav left-menu">
+				<li>
+					<a href="javascript:void(0)" class="nav-link" data-toggle-profile="profile-open">
+						<i class="zmdi zmdi-accounts-list"></i>
+					</a>
+				</li>
+			</ul>
+			<ul id="app_topnavbar-menu" class="nav navbar-nav pull-right">
+				<li>
+					<a href="javascript:void(0)" data-navsearch-open>
+						<i class="zmdi zmdi-search"></i>
+					</a>
+				</li>
+                <li class="dropdown white">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="zmdi zmdi-account"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right btn-primary">
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Another action</a></li>
+                        <li><a href="javascript:void(0)">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)">Sign out</a></li>
+                    </ul>
+                </li>
+				<li class="last">
+					<a href="javascript:void(0)" data-toggle-state="sidebar-overlay-open" data-key="rightSideBar">
+						<i class="mdi mdi-playlist-plus"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<form role="search" action="" class="navbar-form" id="navbar_form">
+			<div class="form-group">
+				<input type="text" placeholder="" class="form-control" id="navbar_search" autocomplete="off">
+				<i data-navsearch-close class="zmdi zmdi-close close-search"></i>
+			</div>
+			<button type="submit" class="hidden btn btn-default">Submit</button>
+		</form>
+	</nav>
+</header>

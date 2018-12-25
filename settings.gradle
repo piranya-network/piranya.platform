@@ -1,0 +1,10 @@
+
+include 'network.piranya.platform.api'
+include 'network.piranya.platform.node.api'
+include 'network.piranya.platform.node.app'
+include 'network.piranya.platform.node.core'
+include 'network.piranya.platform.node.core.execution'
+include 'network.piranya.platform.node.utilities'
+
+include 'tests:network.piranya.platform.tests.commons'
+include 'tests:network.piranya.platform.tests.integration'
